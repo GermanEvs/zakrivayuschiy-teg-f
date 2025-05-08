@@ -229,7 +229,6 @@ img {
   outline: none;
 }
 
-
 .like-icon:hover .core {
   fill: var(--main-color, #000);
   transition-delay: 0s;
@@ -357,7 +356,7 @@ img {
   position: relative;
   mix-blend-mode: difference;
   z-index: 1;
-  color:#fff;
+  color: #fff;
 
   block-size: 21px;
 }

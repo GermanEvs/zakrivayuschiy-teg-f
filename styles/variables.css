@@ -1,14 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-
-    --font-main: 'Inter-Variable', sans-serif;
-    --font-accent: 'PressStart2P-Regular', cursive; 
-    --font-weight-text: 400;
-    --font-weight-title: 700;
-    --title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-    --subtitle-size:clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-    --accent-color:#fff;
-    --main-color:#000;
-    --contour-color: var(--main-color);
-    --filling-color: #FF0000;
+  --font-main: "Inter-Variable", sans-serif;
+  --font-accent: "PressStart2P-Regular", cursive;
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+  --title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --subtitle-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --accent-color: #fff;
+  --main-color: #000;
+  --contour-color: var(--main-color);
+  --filling-color: #ff0000;
 }
