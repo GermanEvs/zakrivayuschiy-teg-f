@@ -204,7 +204,6 @@ img {
   background-color: transparent;
   line-height: 90%;
   font-size: 14px;
-  transition: all 0.5s;
 }
 
 .card__like__button::before {
