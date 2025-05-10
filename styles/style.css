@@ -50,9 +50,6 @@
   border: 2px solid var(--main-color, #000);
 }
 
-.content__image {
-  position: relative;
-}
 
 img {
   width: 100%;
@@ -62,6 +59,10 @@ img {
   object-fit: contain;
   border-block-end: 2px solid var(--main-color, #000);
   object-position: center;
+}
+
+.content__image {
+  position: relative;
 }
 
 .img__span {
@@ -188,7 +189,7 @@ margin: 25px;
 }
 
 .card__like-button {
-  cursor: pointer;
+
   position: relative;
   display: flex;
   width: 130px;
@@ -196,7 +197,7 @@ margin: 25px;
   padding: 9px 17px;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  
   line-height: 90%;
   font-size: 14px;
 }
@@ -373,6 +374,7 @@ margin: 25px;
   font-size: 14px;
    border: 2px solid var(--main-color, #000);
    cursor: pointer;
+   
 
 }
 
@@ -407,10 +409,21 @@ margin: 25px;
   mix-blend-mode: difference;
 }
 
-@media (width <=375px) {
+@media (width <=500px) {
+.page {
+  margin: 0;
+}
+
   .header {
     padding: 120px 14px;
   }
+
+  img {
+  width: 100%;
+  height: auto;
+  max-height: 371px;
+
+}
 
   .img__span {
     top: 20px;
@@ -428,9 +441,19 @@ margin: 25px;
     margin-block-end: 100px;
   }
 
+  .pharagraph__content {
+    padding: 23px 27px 0 25px;
+    line-height: 21px;
+  }
+
 
 
   .floppy {
     block-size: 28px;
   }
+  .card__list {
+    margin-bottom: 0;
+ 
+  gap: 46px;
+}
 }
