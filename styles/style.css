@@ -19,7 +19,7 @@
   background-attachment: fixed;
   font-variation-settings: "wght" var(--font-weight-text, 400);
   max-width: 700px;
-  background: repeating-linear-gradient(90deg,
+  background-image: repeating-linear-gradient(90deg,
       #d3d3d3 0 2px,
       rgb(0 0 0 / 0) 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
@@ -72,8 +72,8 @@ img {
   mix-blend-mode: hard-light;
   font-family: var(--font-accent, cursive);
   font-size: 14px;
-  text-shadow: 1px 1px 0 #aaa, -1px -1px 0 #aaa, 1px -1px 0 #aaa,
-    -1px 1px 0 #aaa;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff;
 }
 
 @supports (-webkit-text-stroke: 1px white) {
@@ -84,7 +84,7 @@ img {
 }
 
 .content__subtitle {
-  font-family: var(--font-main);
+  font-family: var(--font-main, sans-serif);
   font-size: 18px;
   font-variation-settings: "wght" 700;
   padding: 5px 10px;
@@ -148,11 +148,7 @@ margin: 25px;
  gap:3px;
 }
 
-.button {
-  cursor: pointer;
-  border: 2px solid #000;
-  font-family: var(--font-accent, cursive);
-}
+
 
 .sparks {
   opacity: 0;
@@ -200,8 +196,6 @@ margin: 25px;
   padding: 9px 17px;
   justify-content: center;
   align-items: center;
-  font-family: var(--font-accent, cursive);
-  border: 2px solid var(--main-color, #000);
   background-color: transparent;
   line-height: 90%;
   font-size: 14px;
@@ -295,19 +289,17 @@ margin: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  
   position: relative;
   gap: 5px;
   inline-size: 339px;
   block-size: 55px;
-  font-family: var(--font-accent, cursive);
-  font-weight: var(--font-weight-text, 400);
-  font-size: 14px;
+  
   line-height: 90%;
   margin-block-start: 52px;
   margin-inline-start: 180px;
       margin-block-end: 103px;
-  border: 2px solid var(--main-color, #000);
+  
 }
 
 .dialog {
@@ -347,7 +339,7 @@ margin: 25px;
 }
 
 .dialog:not([open]) {
-  opacity: 0;
+  display: none;
   pointer-events: none;
 }
 
@@ -372,6 +364,16 @@ margin: 25px;
 .header__subtitle {
   font-size: var(--subtitle-size,
       clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem));
+}
+
+.button {
+   position: relative; 
+   font-family: var(--font-accent, cursive);
+  font-weight: var(--font-weight-text, 400);
+  font-size: 14px;
+   border: 2px solid var(--main-color, #000);
+   cursor: pointer;
+
 }
 
 .button:focus {
@@ -426,9 +428,7 @@ margin: 25px;
     margin-block-end: 100px;
   }
 
-  .pharagraph__content {
-    gap:27px;
-  }
+
 
   .floppy {
     block-size: 28px;
