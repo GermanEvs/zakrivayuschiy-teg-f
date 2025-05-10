@@ -372,6 +372,7 @@ img {
   font-size: 14px;
   border: 2px solid var(--main-color, #000);
   cursor: pointer;
+  background-color: transparent;
   transition: box-shadow 0.3s ease;
 }
 
