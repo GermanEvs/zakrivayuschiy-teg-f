@@ -372,7 +372,7 @@ img {
   font-size: 14px;
   border: 2px solid var(--main-color, #000);
   cursor: pointer;
-  background-color: transparent;
+  background-color: var(--accent-color, #fff);
   transition: box-shadow 0.3s ease;
 }
 
@@ -438,6 +438,11 @@ img {
     margin-block-end: 100px;
   }
 
+  .card__buttons {
+    margin: 25px;
+    gap: 5px;
+  }
+
   .pharagraph__content {
     padding: 23px 27px 0 25px;
     line-height: 21px;
@@ -448,7 +453,6 @@ img {
   }
   .card__list {
     margin-bottom: 0;
-
     gap: 46px;
   }
 }
