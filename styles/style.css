@@ -448,6 +448,15 @@ img {
     padding: 23px 27px 0 25px;
   }
 
+  .dialog {
+    padding: 32px 42px;
+    inline-size: 341px;
+  }
+
+  .dialog__form {
+    grid-template-columns: 0.5fr 1.8fr;
+  }
+
   .floppy {
     block-size: 28px;
   }
